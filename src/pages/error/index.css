@@ -1,0 +1,23 @@
+.error-container .form-container {
+  gap: 15px;
+}
+.error-container .form-container .form-header {
+  gap: 30px;
+}
+.error-container .form-container .form-header .sub {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+}
+.error-container .form-container .confirmation .message {
+  margin-bottom: 20px;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .error-container .form-container .form-header .sub {
+    font-size: 25px;
+    line-height: unset;
+  }
+}

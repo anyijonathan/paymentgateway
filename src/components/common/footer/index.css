@@ -1,0 +1,240 @@
+.footer-container {
+  background: #f5f5f6;
+  box-sizing: border-box;
+  padding: 200px 100px 150px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.footer-container .useful-info {
+  display: flex;
+  box-sizing: border-box;
+}
+.footer-container .useful-info .left-side {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.footer-container .useful-info .left-side .logo {
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+}
+.footer-container .useful-info .left-side .logo img {
+  width: 100%;
+}
+.footer-container .useful-info .left-side .short-desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #5c068c;
+  opacity: 70%;
+}
+.footer-container .useful-info .right-side {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .useful-info .right-side .title {
+  font-family: "Circular Std", Arial, Helvetica, "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2f0248;
+}
+.footer-container .useful-info .right-side .useful-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-container .useful-info .right-side .useful-links .links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-container .useful-info .right-side .useful-links .links .link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  font-family: "Circular Std", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f0248;
+  letter-spacing: 0.02em;
+  opacity: 70%;
+}
+.footer-container .useful-info .right-side .useful-links .links .link:hover {
+  opacity: 100%;
+}
+.footer-container .useful-info .right-side .contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-container .useful-info .right-side .contact-us .contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-container .useful-info .right-side .contact-us .contact-links .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container .useful-info .right-side .contact-us .contact-links .contact-link span {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f0248;
+  letter-spacing: 0.02em;
+}
+.footer-container .useful-info .right-side .contact-us .contact-links .contact-link span a {
+  text-decoration: none;
+  color: #2f0248;
+}
+.footer-container .useful-info .right-side .contact-us .socials {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-container .useful-info .right-side .contact-us .socials .social-link {
+  width: 58px;
+  height: 58px;
+  background: rgba(92, 6, 140, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.footer-container .copyright {
+  font-family: "Gotham", Arial, Helvetica, "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+}
+.footer-container .copyright span {
+  color: #222823;
+  opacity: 0.5;
+}
+.footer-container .copyright .fcmb-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #5c068c;
+  opacity: 60%;
+}
+.footer-container .copyright .fcmb-link:hover {
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 995px) {
+  .footer-container {
+    padding: 150px 50px 50px;
+    gap: 80px;
+  }
+  .footer-container .useful-info {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-container .useful-info .left-side {
+    gap: 20px;
+  }
+  .footer-container .useful-info .left-side .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .footer-container .useful-info .left-side .short-desc {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .footer-container .useful-info .right-side .title {
+    font-size: 18px;
+  }
+  .footer-container .useful-info .right-side .useful-links {
+    gap: 20px;
+  }
+  .footer-container .useful-info .right-side .useful-links .links {
+    gap: 20px;
+  }
+  .footer-container .useful-info .right-side .useful-links .links .link {
+    font-size: 16px;
+  }
+  .footer-container .useful-info .right-side .contact-us {
+    gap: 20px;
+  }
+  .footer-container .useful-info .right-side .contact-us .contact-links {
+    gap: 30px;
+  }
+  .footer-container .useful-info .right-side .contact-us .contact-links .contact-link {
+    gap: 10px;
+  }
+  .footer-container .useful-info .right-side .contact-us .contact-links .contact-link span {
+    font-size: 16px;
+  }
+  .footer-container .useful-info .right-side .contact-us .socials {
+    margin-top: 40px;
+    gap: 30px;
+  }
+  .footer-container .useful-info .right-side .contact-us .socials .social-link {
+    width: 45px;
+    height: 45px;
+  }
+  .footer-container .copyright {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    padding: 100px 30px 50px;
+  }
+  .footer-container .useful-info {
+    gap: 40px;
+  }
+  .footer-container .useful-info .left-side {
+    gap: 20px;
+  }
+  .footer-container .useful-info .left-side .short-desc {
+    font-size: 16px;
+  }
+  .footer-container .useful-info .right-side {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-container .useful-info .right-side .title {
+    font-size: 16px;
+  }
+  .footer-container .useful-info .right-side .useful-links {
+    gap: 15px;
+  }
+  .footer-container .useful-info .right-side .useful-links .links {
+    gap: 15px;
+  }
+  .footer-container .useful-info .right-side .useful-links .links .link {
+    font-size: 14px;
+  }
+  .footer-container .useful-info .right-side .contact-us {
+    gap: 15px;
+  }
+  .footer-container .useful-info .right-side .contact-us .contact-links {
+    gap: 20px;
+  }
+  .footer-container .useful-info .right-side .contact-us .contact-links .contact-link span {
+    font-size: 14px;
+  }
+  .footer-container .useful-info .right-side .contact-us .socials {
+    margin-top: 40px;
+    gap: 30px;
+  }
+  .footer-container .useful-info .right-side .contact-us .socials .social-link {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,13 @@
+.layout-wrapper,
+.layout-container {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: stretch;
+}
+
+.layout-container {
+  max-height: 100vh;
+  overflow: hidden;
+  font-family: "General Sans" !important;
+}

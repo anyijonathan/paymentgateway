@@ -1,0 +1,99 @@
+.modal-dialog .MuiPaper-root {
+  border-radius: 20px;
+  position: relative;
+}
+.modal-dialog .modal-dialog-inner {
+  position: relative;
+  background: #f9f7fb;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  padding: 20px 30px;
+  gap: 10px;
+}
+.modal-dialog .modal-dialog-inner .modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  align-items: center;
+}
+.modal-dialog .modal-dialog-inner .modal-header .logo {
+  width: 50px;
+  height: 50px;
+}
+.modal-dialog .modal-dialog-inner .modal-header .logo img {
+  width: 100%;
+}
+.modal-dialog .modal-dialog-inner .modal-header .modal-title {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #170123;
+  font-weight: 500;
+  padding: 10px;
+}
+.modal-dialog .modal-dialog-inner .modal-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-dialog .modal-dialog-inner .modal-body .form-content {
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-dialog .modal-dialog-inner .modal-body .form-content .modal-select {
+  width: 50%;
+  text-align: left;
+}
+.modal-dialog .modal-dialog-inner .modal-body .modal-actions {
+  gap: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+}
+.modal-dialog .modal-dialog-inner .modal-body .modal-actions .action-btn {
+  flex-grow: 1;
+  height: 50px;
+  width: 150px;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-dialog .modal-dialog-inner {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+  .modal-dialog .modal-dialog-inner .modal-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    align-items: center;
+  }
+  .modal-dialog .modal-dialog-inner .modal-header .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .modal-dialog .modal-dialog-inner .modal-header .logo img {
+    width: 100%;
+  }
+  .modal-dialog .modal-dialog-inner .modal-header .modal-title {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .modal-dialog .modal-dialog-inner .modal-body .modal-content {
+    padding: 15px 10px;
+  }
+}

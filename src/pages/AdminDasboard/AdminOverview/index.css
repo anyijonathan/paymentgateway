@@ -1,0 +1,82 @@
+.overview .menu-item {
+  color: #a299a7;
+  padding: 8px;
+  width: fit-content;
+  text-align: start;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.overview .menu-item.active {
+  background-color: #efe6f3;
+  border: 1px solid #5c068c;
+  border-radius: 4px;
+  color: #000000;
+}
+
+.report {
+  width: 149px;
+  height: 40px;
+  background: #fcfbfd;
+  border: 1px solid #e4dbeb;
+  border-radius: 8px;
+}
+
+.overview table tr:first-of-type td {
+  border-top: none;
+}
+
+.overview tr td:last-child {
+  color: #5c068c;
+}
+
+.overview tr td:last-child:hover {
+  text-decoration: underline;
+}
+
+.table-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 769px) {
+  .overview .menu-item {
+    width: 195px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .overview table {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.n-40 {
+  /* successful payment */
+  background: #09b47c;
+}
+.n-41 {
+  /* failed payment */
+  background: #dc2626;
+}
+.n-60,
+.n-61 {
+  /* created & updated merchant */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #ffb81c;
+}
+.n-62 {
+  /* approved merchant */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #09b47c;
+}
+.n-63 {
+  /* referred merchant */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #7879f1;
+}
+.n-64 {
+  /* declined merchant */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #dc2626;
+}

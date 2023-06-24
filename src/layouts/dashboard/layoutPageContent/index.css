@@ -1,0 +1,7 @@
+.layout-page-content {
+  height: 100%;
+}
+
+.layout-page-content .wrapper {
+  height: calc(100% - (64px));
+}

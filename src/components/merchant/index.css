@@ -1,0 +1,207 @@
+.transactions_card-container {
+  background: #ffffff;
+  border: 1px solid #e8e6e9;
+  border-radius: 8px;
+  min-width: 345px;
+  height: 160px;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.transactions_card-container .overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.transactions_card-container .overview .title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.transactions_card-container .overview .title-section .indicator {
+  width: 4px;
+  height: 16px;
+  border-radius: 4px;
+}
+.transactions_card-container .overview .title-section .failed {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #dc2626;
+}
+.transactions_card-container .overview .title-section .success {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #10b981;
+}
+.transactions_card-container .overview .title-section .title {
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #45344f;
+}
+.transactions_card-container .overview .more-actions {
+  width: 15px;
+  height: 15px;
+}
+.transactions_card-container .overview .more-actions img {
+  width: 100%;
+}
+.transactions_card-container .amount {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.transactions_card-container .amount .symbol {
+  width: 20px;
+  height: 20px;
+}
+.transactions_card-container .amount .symbol img {
+  width: 100%;
+}
+.transactions_card-container .amount .figure {
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+  color: #170123;
+}
+
+.bank-card-container {
+  height: 130px;
+  padding: 16px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.bank-card-container .bank-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  height: 100%;
+}
+.bank-card-container .bank-details .logo {
+  width: 25px;
+  height: 25px;
+}
+.bank-card-container .bank-details .logo img {
+  width: 100%;
+}
+.bank-card-container .bank-details .details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bank-card-container .bank-details .details .account-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bank-card-container .bank-details .details .account-details .bank-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #170123;
+}
+.bank-card-container .bank-details .details .account-details .account {
+  display: flex;
+  gap: 15px;
+}
+.bank-card-container .bank-details .details .account-details .account p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #74677b;
+}
+.bank-card-container .status-btn {
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  min-width: 100px;
+  height: 25px;
+  padding: 0 20px;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  background: #f9f7fb;
+  cursor: default;
+  pointer-events: none;
+}
+
+.other-bank-card {
+  opacity: 80%;
+  background: #fafafa;
+}
+.other-bank-card button {
+  opacity: 50%;
+}
+.other-bank-card p,
+.other-bank-card h1 {
+  color: #74677b !important;
+}
+
+.notification-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.notification-group .sub {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #45344f;
+}
+.notification-group .toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.notification-group .toggles .toggle-control {
+  margin: 0px;
+}
+.notification-group .toggles .toggle-control .MuiFormControlLabel-label {
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+
+@media only screen and (max-width: 600px) {
+  .transactions_card-container {
+    border-radius: 5px;
+    height: 140px;
+    padding: 20px 15px;
+  }
+  .transactions_card-container .amount .figure {
+    font-size: 35px;
+    line-height: unset;
+    height: 45px;
+  }
+  .bank-card-container {
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+  }
+  .bank-card-container .bank-details {
+    gap: 10px;
+  }
+  .bank-card-container .bank-details .details .account-details .bank-name {
+    font-size: 14px;
+    line-height: unset;
+  }
+  .bank-card-container .bank-details .details .actions p {
+    font-size: 13px;
+  }
+  .bank-card-container .status-btn {
+    min-width: 100px;
+    padding: 0 0px;
+    border-radius: 15px;
+    font-size: 11px !important;
+  }
+}

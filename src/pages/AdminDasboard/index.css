@@ -1,0 +1,58 @@
+.manage-staff-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+.manage-staff-container .page-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: -0.01em;
+  color: #170123;
+}
+.manage-staff-container .search-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.manage-staff-container .search-options .inputs {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.manage-staff-container .search-options .buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .manage-staff-container .page-title {
+    font-size: 24px;
+    line-height: unset;
+    letter-spacing: 0em;
+  }
+  .manage-staff-container .search-options {
+    flex-wrap: wrap;
+  }
+  .manage-staff-container .search-options .inputs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .manage-staff-container .search-options .inputs .inputSearch {
+    width: 100%;
+  }
+  .manage-staff-container .search-options .buttons {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .manage-staff-container .search-options .buttons .action-buttons {
+    display: flex;
+    flex-grow: 1;
+  }
+}

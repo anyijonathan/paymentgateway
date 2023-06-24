@@ -1,0 +1,210 @@
+.auth-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.auth-container .form-container {
+  position: relative;
+  z-index: 1;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9fa;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 40px 80px;
+  gap: 30px;
+}
+.auth-container .form-container .form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.auth-container .form-container .form-header .logo {
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+}
+.auth-container .form-container .form-header .logo img {
+  width: 100%;
+}
+.auth-container .form-container .form-header .sub {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+.auth-container .form-container .login-form .form-fields {
+  min-height: 275px;
+}
+.auth-container .form-container .confirmation .message {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+.auth-container .form-container .login-form,
+.auth-container .form-container .reset-form,
+.auth-container .form-container .change-password-form,
+.auth-container .form-container .confirmation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.auth-container .form-container .login-form .form-fields,
+.auth-container .form-container .reset-form .form-fields,
+.auth-container .form-container .change-password-form .form-fields,
+.auth-container .form-container .confirmation .form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.auth-container .form-container .login-form .form-fields .input-section,
+.auth-container .form-container .reset-form .form-fields .input-section,
+.auth-container
+  .form-container
+  .change-password-form
+  .form-fields
+  .input-section,
+.auth-container .form-container .confirmation .form-fields .input-section {
+  height: 77px;
+}
+.auth-container .form-container .login-form .form-fields .input-section input,
+.auth-container .form-container .reset-form .form-fields .input-section input,
+.auth-container
+  .form-container
+  .change-password-form
+  .form-fields
+  .input-section
+  input,
+.auth-container
+  .form-container
+  .confirmation
+  .form-fields
+  .input-section
+  input {
+  font-size: 14px;
+}
+.auth-container .form-container .login-form .action-buttons,
+.auth-container .form-container .reset-form .action-buttons,
+.auth-container .form-container .change-password-form .action-buttons,
+.auth-container .form-container .confirmation .action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.auth-container .form-container .login-form .action-buttons .forgot-link,
+.auth-container .form-container .reset-form .action-buttons .forgot-link,
+.auth-container
+  .form-container
+  .change-password-form
+  .action-buttons
+  .forgot-link,
+.auth-container .form-container .confirmation .action-buttons .forgot-link {
+  text-decoration: none;
+  font-size: 14px;
+  align-self: center;
+  background: linear-gradient(89.92deg, #60088c 0.07%, #a11e90 92.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media only screen and (max-width: 995px) {
+  .auth-container .form-container {
+    width: 70%;
+    gap: 30px;
+    padding: 40px 70px;
+  }
+  .auth-container .form-container .form-header .logo {
+    height: 60px;
+    width: 60px;
+  }
+  .auth-container .form-container .confirmation .message {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: unset;
+  }
+  .auth-container .form-container .login-form,
+  .auth-container .form-container .reset-form,
+  .auth-container .form-container .change-password-form,
+  .auth-container .form-container .confirmation {
+    gap: 30px;
+  }
+  .auth-container .form-container .login-form .action-buttons,
+  .auth-container .form-container .reset-form .action-buttons,
+  .auth-container .form-container .change-password-form .action-buttons,
+  .auth-container .form-container .confirmation .action-buttons {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .auth-container .form-container {
+    width: 90%;
+    border-radius: 10px;
+    padding: 40px 20px;
+    gap: 30px;
+    min-height: unset;
+  }
+  .auth-container .form-container .form-header {
+    gap: 15px;
+  }
+  .auth-container .form-container .form-header .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .auth-container .form-container .form-header .sub {
+    font-size: 20px;
+  }
+  .auth-container .form-container .login-form,
+  .auth-container .form-container .reset-form,
+  .auth-container .form-container .change-password-form,
+  .auth-container .form-container .confirmation {
+    gap: 30px;
+  }
+  .auth-container
+    .form-container
+    .login-form
+    .form-fields
+    .input-section
+    button,
+  .auth-container
+    .form-container
+    .reset-form
+    .form-fields
+    .input-section
+    button,
+  .auth-container
+    .form-container
+    .change-password-form
+    .form-fields
+    .input-section
+    button,
+  .auth-container
+    .form-container
+    .confirmation
+    .form-fields
+    .input-section
+    button {
+    padding: 8px !important;
+  }
+  .auth-container .form-container .login-form .action-buttons button,
+  .auth-container .form-container .reset-form .action-buttons button,
+  .auth-container .form-container .change-password-form .action-buttons button,
+  .auth-container .form-container .confirmation .action-buttons button {
+    width: 100% !important;
+  }
+}

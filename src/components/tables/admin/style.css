@@ -1,0 +1,92 @@
+.table-title .sub-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #a299a7;
+}
+
+.table-title {
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+
+.admin-table {
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.admin-table thead tr td {
+  font-weight: 500;
+}
+
+.admin-table thead tr {
+  background: #f2eef7;
+}
+
+/* background: #FAF8FB; */
+
+.admin-table tbody tr td {
+  font-weight: 400;
+  color: #45344f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+.admin-table tbody tr {
+  border-top: 1px solid #ededf3;
+  border-bottom: 1px solid #ededf3;
+}
+
+.admin-table tbody tr:hover {
+  background: #faf8fb;
+}
+
+.chip-bg {
+  background-color: #5d5fef !important;
+}
+
+#failed,
+#decline,
+#delete,
+#declined {
+  color: #f34e4e;
+}
+
+#pending {
+  color: #e4a911;
+}
+
+#refered,
+#initiated {
+  color: #5d5fef;
+}
+
+#successful,
+#success,
+#approved,
+#approve {
+  color: #09b47c;
+}
+
+.admin-table-header .inputSearch {
+  background: #fcfbfd;
+  border: 1px solid #e4dbeb;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #74677b;
+}
+
+.admin-table-header .inputSearch:hover {
+  border: 1px solid #e4dbeb;
+}
+
+.action-menu-item:hover {
+  background: #f7f5f8 !important;
+}

@@ -1,0 +1,42 @@
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feature-container .icon {
+  height: 55px;
+  width: 55px;
+}
+.feature-container .icon img {
+  width: 100%;
+}
+.feature-container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.feature-container .desc .title {
+  font-family: "Clash Display", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: #170123;
+}
+.feature-container .desc .sub {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #74677b;
+}
+
+@media only screen and (max-width: 995px) {
+  .feature-container .desc .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .feature-container .desc .sub {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

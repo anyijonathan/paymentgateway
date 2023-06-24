@@ -1,0 +1,220 @@
+.overview-container,
+.transactions-container,
+.transaction-container,
+.income-container,
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+.overview-container .page-title,
+.transactions-container .page-title,
+.transaction-container .page-title,
+.income-container .page-title,
+.settings-container .page-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: -0.01em;
+  color: #170123;
+}
+
+.overview-container .transactions-overview {
+  display: flex;
+  gap: 35px;
+}
+
+.transactions-container .search-options,
+.income-container .search-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transactions-container .search-options .inputs,
+.transactions-container .search-options .buttons,
+.income-container .search-options .inputs,
+.income-container .search-options .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transaction-container .transaction-details {
+  display: flex;
+  gap: 25px;
+}
+.transaction-container .transaction-details .payment-details {
+  flex-basis: 70%;
+}
+.transaction-container .transaction-details .payment-details .details-breakdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  row-gap: 60px;
+}
+.transaction-container .transaction-details .payment-details .details-breakdown .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.transaction-container .transaction-details .payment-details .details-breakdown .detail .label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #74677b;
+}
+.transaction-container .transaction-details .payment-details .details-breakdown .detail .value {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #170123;
+}
+.transaction-container .transaction-details .transaction-status {
+  flex-basis: 30%;
+}
+.transaction-container .transaction-details .transaction-status .MuiAlert-message {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+}
+.transaction-container .transaction-details .transaction-status .status-details {
+  display: flex;
+  gap: 15px;
+}
+.transaction-container .transaction-details .transaction-status .status-details .refund,
+.transaction-container .transaction-details .transaction-status .status-details .chargeback {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.transaction-container .transaction-details .transaction-status .status-details .refund .label,
+.transaction-container .transaction-details .transaction-status .status-details .chargeback .label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #74677b;
+}
+.transaction-container .transaction-details .transaction-status .status-details .refund .amount,
+.transaction-container
+  .transaction-details
+  .transaction-status
+  .status-details
+  .chargeback
+  .amount {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #170123;
+}
+
+.income-container .title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .overview-container .transactions-overview {
+    gap: 20px;
+  }
+  .transactions-container .search-options {
+    gap: 20px;
+  }
+  .transactions-container .search-options .inputs,
+  .transactions-container .search-options .buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .transactions-container .search-options .buttons .action-buttons {
+    flex-grow: 1;
+  }
+  .transactions-container .search-options .inputs {
+    gap: 15px;
+  }
+  .transactions-container .search-options .inputs .dateRange {
+    flex-grow: 1;
+  }
+  .transactions-container .search-options .inputs .dateRange .dateRangePicker {
+    flex-grow: 1;
+  }
+  .transactions-container .search-options .inputs .dateRange .dateRangePicker .dateInput {
+    width: 100%;
+  }
+  .transactions-container .search-options .inputs .selectBox {
+    flex-grow: 1;
+  }
+  .transaction-container .transaction-details {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .overview-container .page-title,
+  .transactions-container .page-title,
+  .income-container .page-title {
+    font-size: 24px;
+    line-height: unset;
+    letter-spacing: 0em;
+  }
+  .overview-container .transactions-overview {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .transactions-container .search-options {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .transactions-container .search-options .buttons {
+    flex-grow: 1;
+    gap: 15px;
+  }
+  .transactions-container .search-options .inputs {
+    flex-grow: 1;
+  }
+  .transactions-container .search-options .inputs label,
+  .transactions-container .search-options .inputs input,
+  .transactions-container .search-options .inputs .MuiSelect-select {
+    font-size: 14px;
+  }
+  .transactions-container .search-options .inputs .dateRange .dateRangePicker {
+    width: unset;
+  }
+  .transactions-container .search-options .inputs .dateRange .dateRangePicker .dateInput {
+    width: 100%;
+  }
+  .transactions-container .search-options .inputs .selectBox {
+    width: unset;
+    flex-basis: 45%;
+  }
+  .transaction-container .transaction-details .payment-details .details-breakdown {
+    grid-template-columns: 1fr 1fr;
+  }
+  .transaction-container .transaction-details .payment-details .details-breakdown .detail .label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .transaction-container .transaction-details .transaction-status .status-details .refund .label,
+  .transaction-container
+    .transaction-details
+    .transaction-status
+    .status-details
+    .chargeback
+    .label {
+    font-size: 12px;
+  }
+  .transaction-container .transaction-details .transaction-status .status-details .refund .amount,
+  .transaction-container
+    .transaction-details
+    .transaction-status
+    .status-details
+    .chargeback
+    .amount {
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,199 @@
+.general-settings-container,
+.contact-settings-container,
+.bank-settings-container,
+.users-settings-container,
+.password-settings-container,
+.notifications-settings-container,
+.api-settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+.general-settings-container .title,
+.contact-settings-container .title,
+.bank-settings-container .title,
+.users-settings-container .title,
+.password-settings-container .title,
+.notifications-settings-container .title,
+.api-settings-container .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+.general-settings-container .settings-form,
+.contact-settings-container .settings-form,
+.bank-settings-container .settings-form,
+.users-settings-container .settings-form,
+.password-settings-container .settings-form,
+.notifications-settings-container .settings-form,
+.api-settings-container .settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+.general-settings-container .settings-form .form-fields,
+.contact-settings-container .settings-form .form-fields,
+.bank-settings-container .settings-form .form-fields,
+.users-settings-container .settings-form .form-fields,
+.password-settings-container .settings-form .form-fields,
+.notifications-settings-container .settings-form .form-fields,
+.api-settings-container .settings-form .form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.general-settings-container .settings-form .form-fields .input-section,
+.contact-settings-container .settings-form .form-fields .input-section,
+.bank-settings-container .settings-form .form-fields .input-section,
+.users-settings-container .settings-form .form-fields .input-section,
+.password-settings-container .settings-form .form-fields .input-section,
+.notifications-settings-container .settings-form .form-fields .input-section,
+.api-settings-container .settings-form .form-fields .input-section {
+  height: 80px;
+}
+.general-settings-container .settings-form .save-changes-btn,
+.contact-settings-container .settings-form .save-changes-btn,
+.bank-settings-container .settings-form .save-changes-btn,
+.users-settings-container .settings-form .save-changes-btn,
+.password-settings-container .settings-form .save-changes-btn,
+.notifications-settings-container .settings-form .save-changes-btn,
+.api-settings-container .settings-form .save-changes-btn {
+  width: 200px;
+  height: 40px;
+}
+
+.contact-settings-container .settings-form .form-fields .address-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-settings-container .settings-form .form-fields .address-box .input-section {
+  height: unset;
+}
+.contact-settings-container .settings-form .form-fields .address-box .two-in-one {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.bank-settings-container .new-bank {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+  height: 40px;
+  background: #f9f7fb;
+  border: 1px dashed #d2c2df;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bank-settings-container .new-bank p {
+  margin-top: 1px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #5c068c;
+}
+
+.users-settings-container {
+  width: 60%;
+}
+
+.password-settings-container .forgot-password {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.notifications-settings-container {
+  gap: 50px;
+}
+.notifications-settings-container .sub-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #a299a7;
+}
+.notifications-settings-container .settings-form {
+  gap: 30px;
+}
+.notifications-settings-container .settings-form hr {
+  border-color: #dcdcdc;
+}
+
+.api-settings-container .settings-form .form-fields {
+  gap: 25px !important;
+}
+
+@media only screen and (max-width: 995px) {
+  .general-settings-container,
+.contact-settings-container,
+.bank-settings-container,
+.users-settings-container,
+.password-settings-container,
+.notifications-settings-container,
+.api-settings-container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .general-settings-container,
+.contact-settings-container,
+.bank-settings-container,
+.users-settings-container,
+.password-settings-container,
+.notifications-settings-container,
+.api-settings-container {
+    width: 100%;
+  }
+  .general-settings-container .settings-form,
+.contact-settings-container .settings-form,
+.bank-settings-container .settings-form,
+.users-settings-container .settings-form,
+.password-settings-container .settings-form,
+.notifications-settings-container .settings-form,
+.api-settings-container .settings-form {
+    margin-bottom: 50px;
+  }
+  .general-settings-container .settings-form .form-fields,
+.contact-settings-container .settings-form .form-fields,
+.bank-settings-container .settings-form .form-fields,
+.users-settings-container .settings-form .form-fields,
+.password-settings-container .settings-form .form-fields,
+.notifications-settings-container .settings-form .form-fields,
+.api-settings-container .settings-form .form-fields {
+    gap: 30px;
+  }
+  .general-settings-container .settings-form .form-fields .two-in-one,
+.contact-settings-container .settings-form .form-fields .two-in-one,
+.bank-settings-container .settings-form .form-fields .two-in-one,
+.users-settings-container .settings-form .form-fields .two-in-one,
+.password-settings-container .settings-form .form-fields .two-in-one,
+.notifications-settings-container .settings-form .form-fields .two-in-one,
+.api-settings-container .settings-form .form-fields .two-in-one {
+    gap: 10px;
+  }
+  .contact-settings-container .settings-form .form-fields .address-box {
+    gap: 10px;
+  }
+  .contact-settings-container .settings-form .form-fields .address-box .two-in-one {
+    gap: 10px;
+  }
+  .users-settings-container .invite-user-button {
+    padding: 6px 16px 6px 10px;
+  }
+  .users-settings-container .invite-user-button .user-invite {
+    font-size: 13px !important;
+  }
+  .users-settings-container .invite-user-button .user-invite svg {
+    font-size: 1.2rem;
+  }
+}

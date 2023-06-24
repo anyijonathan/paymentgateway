@@ -1,0 +1,133 @@
+.table-top {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-top .table-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+.table-top .all {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  height: 45px;
+  margin: 10px;
+}
+.custom-pagination .prev-button,
+.custom-pagination .next-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+  color: #170123;
+  background: #f2ecf6;
+  border: 1 solid #fcfbfd;
+}
+.custom-pagination .prev-button:hover,
+.custom-pagination .next-button:hover {
+  background: #5c2f94;
+  color: #fff;
+}
+.custom-pagination .prev-button:disabled,
+.custom-pagination .next-button:disabled {
+  background: #f2ecf6;
+  color: #170123;
+  opacity: 30%;
+}
+
+#failed {
+  color: #f34e4e;
+}
+
+#successful {
+  color: #09b47c;
+}
+
+#pending {
+  color: #e4a911;
+}
+
+#referred {
+  color: blue;
+}
+
+#view {
+  color: rgba(92, 6, 140, 0.7);
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-pagination {
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .custom-pagination .numbering {
+    flex-basis: 100%;
+    order: 1;
+  }
+  .custom-pagination .prev-button {
+    flex-basis: 40%;
+    order: 2;
+  }
+  .custom-pagination .next-button {
+    flex-basis: 40%;
+    order: 3;
+  }
+  .income-table .table-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .income-table .table-top .search-options {
+    width: 100%;
+  }
+  .income-table .table-top .search-options .inputs {
+    width: 100%;
+  }
+  .income-table .table-top .search-options .inputs label,
+  .income-table .table-top .search-options .inputs input,
+  .income-table .table-top .search-options .inputs .MuiSelect-select {
+    font-size: 14px;
+  }
+  .income-table .table-top .search-options .inputs .selectBox,
+  .income-table .table-top .search-options .inputs .inputSearch {
+    width: unset;
+    flex-grow: 1;
+  }
+  .income-table .table-top .search-options .inputs .selectBox {
+    flex-basis: 40%;
+  }
+  .income-table .table-top .search-options .inputs .inputSearch {
+    flex-basis: 60%;
+    height: 40px;
+  }
+  .users-table {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e8e6e9;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+}

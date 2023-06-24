@@ -1,0 +1,21 @@
+.export-icon {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 13px;
+  box-shadow: 6px 6px 30px 4px rgba(230, 225, 234, 0.8);
+}
+.export-icon img {
+  width: 100%;
+}
+.export-icon:hover {
+  background: #5c2f94;
+}
+
+.pdf {
+  padding: 15px;
+}

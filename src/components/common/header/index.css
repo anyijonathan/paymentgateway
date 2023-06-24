@@ -1,0 +1,30 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px 80px 15px;
+}
+.header-container .logo {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.header-container .logo img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 995px) {
+  .header-container {
+    padding: 20px 40px 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-container {
+    padding: 10px 20px 10px;
+  }
+  .header-container .logo {
+    height: 45px;
+    width: 45px;
+  }
+}

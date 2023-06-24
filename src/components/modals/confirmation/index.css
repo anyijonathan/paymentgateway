@@ -1,0 +1,49 @@
+.confirm-dialog .MuiPaper-root {
+  border-radius: 10px;
+}
+.confirm-dialog .confirm-dialog-inner {
+  background: #f9f7fb;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  padding: 30px;
+  gap: 20px;
+}
+.confirm-dialog .confirm-dialog-inner .logo {
+  width: 50px;
+  height: 50px;
+}
+.confirm-dialog .confirm-dialog-inner .logo img {
+  width: 100%;
+}
+.confirm-dialog .confirm-dialog-inner .dialog-title {
+  padding: 0;
+  font-size: 17px;
+}
+.confirm-dialog .confirm-dialog-inner .dialog-title span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.confirm-dialog .confirm-dialog-inner .dialog-content {
+  padding: 0;
+  width: 100%;
+}
+.confirm-dialog .confirm-dialog-inner .dialog-content .description {
+  font-size: 15px;
+  color: #747474;
+}
+.confirm-dialog .confirm-dialog-inner .dialog-actions {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .confirm-dialog .confirm-dialog-inner {
+    padding: 30px 15px;
+  }
+  .confirm-dialog .confirm-dialog-inner .dialog-content .description {
+    font-size: 14px;
+  }
+}

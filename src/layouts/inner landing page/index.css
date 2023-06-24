@@ -1,0 +1,16 @@
+.inner-layout {
+  box-sizing: border-box;
+  padding: 0px 80px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 995px) {
+  .inner-layout {
+    padding: 0px 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .inner-layout {
+    padding: 0px 20px;
+  }
+}

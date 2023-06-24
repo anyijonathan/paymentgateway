@@ -1,0 +1,104 @@
+.layout-menu.mobile-open {
+  transform: translate(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.layout-menu {
+  position: fixed;
+  z-index: 50;
+  height: 100%;
+  width: 256px;
+  transform: translate(-280px);
+  transition: all 0.5s ease-in;
+}
+
+.app-brand {
+  width: 136px;
+  height: 53px;
+}
+
+.layout-menu-toggle {
+  position: absolute;
+  top: 0.6rem;
+  right: -7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-arrow {
+  width: 2rem;
+  height: 2rem;
+  rotate: 90deg;
+}
+
+.layout-menu nav {
+  height: 100%;
+  overflow: auto;
+}
+
+.menu-container {
+  height: 572px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.menu-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  padding: 12px 8px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.menu-item.sign-out {
+  color: #f34e4e;
+  margin-top: 48px;
+}
+
+.menu-item.sign-out svg path {
+  stroke: #f34e4e;
+}
+
+.menu-item span {
+  padding-left: 10px;
+}
+.menu-item.active {
+  color: #5c068c;
+  background-color: #ededf3;
+  border-right: 2px solid #5c068c;
+}
+
+.menu-item.active svg path {
+  stroke: #5c068c;
+}
+@media only screen and (min-width: 1024px) {
+  .menu-item.sign-out {
+    color: #f34e4e;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .layout-menu-toggle {
+    display: none;
+  }
+
+  .layout-menu,
+  .layout-menu.mobile-open {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    height: 100%;
+    transform: none;
+    transition: none;
+  }
+}

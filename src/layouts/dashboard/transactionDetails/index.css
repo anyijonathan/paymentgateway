@@ -1,0 +1,21 @@
+.transaction-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.transaction-details-container .section-heading .title {
+  padding: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #170123;
+}
+.transaction-details-container .section-heading hr {
+  border-color: #e8e6e9;
+}
+.transaction-details-container .section-body {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

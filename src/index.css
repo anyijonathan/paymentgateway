@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fonts/fonts.css";
+
+body {
+  font-family: "General Sans", Arial, Helvetica, "Roboto", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.MuiFormLabel-asterisk {
+  display: none;
+}
+
+.MuiButton-root {
+  border-radius: 5px;
+  background: transparent;
+  text-transform: capitalize !important;
+}
+
+.MuiButton-root:disabled {
+  pointer-events: auto !important;
+  cursor: no-drop !important;
+  opacity: 50% !important;
+}
+
+.gradient {
+  background: linear-gradient(89.92deg, #60088c 0.07%, #a11e90 92.22%);
+  color: #fff;
+  border: none;
+}
+.gradient:disabled {
+  color: #fff !important;
+}
+
+.pageHeader {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: -0.01em;
+  color: #170123;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 14px !important;
+    line-height: unset !important;
+  }
+  .mobile-button {
+    width: fit-content !important;
+    padding: 5px 50px !important;
+  }
+
+  .pageHeader {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

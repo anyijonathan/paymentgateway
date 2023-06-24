@@ -1,0 +1,48 @@
+.logout-dialog .MuiPaper-root {
+  border-radius: 10px;
+}
+.logout-dialog .logout-dialog-inner {
+  background: #f9f7fb;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  padding: 30px;
+  gap: 20px;
+}
+.logout-dialog .logout-dialog-inner .icon {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #f4f0f7;
+}
+.logout-dialog .logout-dialog-inner .dialog-content {
+  width: 100%;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+.logout-dialog .logout-dialog-inner .dialog-content .description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.logout-dialog .logout-dialog-inner .dialog-actions button {
+  width: 200px;
+  height: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logout-dialog .logout-dialog-inner {
+    padding: 30px 15px;
+  }
+  .logout-dialog .logout-dialog-inner .dialog-content .description {
+    font-size: 16px;
+  }
+  .logout-dialog .logout-dialog-inner .dialog-actions button {
+    width: unset;
+  }
+}

@@ -1,0 +1,82 @@
+.settings-navigation {
+  border-bottom: 1px solid #f8f8f9;
+}
+
+.settings-navigation .links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.settings-navigation .links .link {
+  text-decoration: none;
+  width: max-content;
+  padding: 5px 20px;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #a299a7;
+  text-align: center;
+}
+
+.settings-navigation .links .active {
+  border-bottom: 2px solid #5c068c;
+  color: #5c068c;
+}
+
+.settings-box {
+  padding: 0 30px;
+}
+
+.purple-details--box {
+  background: #faf8fb !important;
+}
+
+.transaction-details.merchant-details .transaction-status .status-details .chargeback {
+  align-items: flex-start;
+}
+
+.transaction-details.merchant-details .transaction-status .status-details .refund {
+  display: flex;
+  align-items: flex-start;
+}
+
+.transaction-details.merchant-details .transaction-status .status-details .refund .label {
+  text-align: start;
+}
+
+.details-input {
+  background: #fcfbfd;
+  border: 1px solid #e4dbeb;
+  border-radius: 8px;
+  width: 440px;
+  height: 40px;
+  max-width: 100%;
+}
+
+.details-input input {
+  padding: 9px 16px;
+}
+
+.delete-button:disabled {
+  background: #c91d25 !important;
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .settings-navigation .links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .settings-navigation .links .link {
+    width: unset;
+    padding: 5px 25px;
+  }
+
+  .settings-box {
+    padding: 0 15px;
+  }
+}

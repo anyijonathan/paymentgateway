@@ -1,0 +1,158 @@
+.docx-container {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.background-overlay {
+  position: fixed;
+  width: 1259px;
+  height: 1259px;
+  left: 273px;
+  top: -80px;
+  background: linear-gradient(
+    227.63deg,
+    #fbf6fe 26.15%,
+    #fcf8eb 62.24%,
+    rgba(251, 246, 254, 0.9) 91.46%
+  );
+  filter: blur(100px);
+}
+
+.header-con {
+  background: linear-gradient(
+    227.63deg,
+    #fbf6fe 26.15%,
+    #fcf8eb 62.24%,
+    rgba(251, 246, 254, 0.9) 91.46%
+  );
+}
+
+.docx-inner {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.docx-sidebar {
+  position: fixed;
+  z-index: 10;
+}
+
+.docx-sidebar .sidebar-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.02em;
+  color: #999999;
+  cursor: pointer;
+  transition: 0.2s;
+  width: fit-content;
+  padding: 10px 5px 10px 15px;
+}
+
+.docx-sidebar .active {
+  font-size: 22px;
+  color: #170123;
+  font-weight: 600;
+  transition: 0.2s;
+  border-left: 4px solid #170123;
+}
+
+.docx-content .section-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 138%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.docx-content .section-sub-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media only screen and (max-width: 900px) {
+  .extra {
+    display: none;
+  }
+
+  .background-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(
+      227.63deg,
+      #fbf6fe 26.15%,
+      #fcf8eb 62.24%,
+      rgba(251, 246, 254, 0.9) 91.46%
+    );
+    filter: blur(100px);
+  }
+
+  .docx-inner {
+    grid-template-columns: 1fr;
+  }
+  .docx-sidebar {
+    position: fixed;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 25px;
+    justify-content: space-between;
+    background: #fffffff4;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    padding: 0px 20px;
+  }
+  .docx-sidebar .sidebar-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: unset;
+    width: unset;
+    padding: 15px 0px;
+  }
+  .docx-sidebar .sidebar-link span {
+    display: inline-block;
+    width: max-content;
+  }
+  .docx-sidebar .active {
+    font-weight: 600;
+    border-left: none;
+  }
+  .docx-content {
+    margin-top: 50px;
+  }
+  .docx-content .section-header {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  .docx-content .section-sub-header {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .docx-content {
+    margin-top: 85px;
+  }
+  .docx-content .section-header {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .docx-content .section-sub-header {
+    font-size: 16px;
+  }
+}

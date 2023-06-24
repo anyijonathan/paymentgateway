@@ -1,0 +1,440 @@
+.landing_page-container {
+  position: relative;
+}
+.landing_page-container .header-area {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+.landing_page-container .banner {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  gap: 50px;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(
+    227.63deg,
+    #fbf6fe 26.15%,
+    #fcf8eb 62.24%,
+    rgba(251, 246, 254, 0.9) 91.46%
+  );
+}
+.landing_page-container .banner .banner-text {
+  position: relative;
+  box-sizing: border-box;
+  margin: 150px 15px 0px 80px;
+  text-align: left;
+}
+.landing_page-container .banner .banner-text .main {
+  font-family: "Clash Display", Arial, Helvetica, "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+.landing_page-container .banner .banner-text .sub {
+  margin-top: 25px;
+  font-family: "General Sans", Arial, Helvetica, "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #45344f;
+}
+.landing_page-container .banner .banner-image {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.landing_page-container .banner .banner-image .lady-image {
+  position: relative;
+  margin-top: 201px;
+  width: 450px;
+}
+.landing_page-container .banner .banner-image .lady-image img {
+  width: 100%;
+}
+.landing_page-container .banner .banner-image .payment-image {
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+  width: 365px;
+}
+.landing_page-container .banner .banner-image .payment-image img {
+  width: 100%;
+}
+.landing_page-container .key-features {
+  box-sizing: border-box;
+  text-align: left;
+}
+.landing_page-container .key-features .inner-layout {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.landing_page-container .key-features .inner-layout .main {
+  font-family: "Clash Display", Arial, Helvetica, "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #170123;
+  width: 50%;
+}
+.landing_page-container .key-features .inner-layout .features-list {
+  display: flex;
+  gap: 100px;
+}
+.landing_page-container .tab-info {
+  background: linear-gradient(
+    227.63deg,
+    #fbf6fe 26.15%,
+    #fcf8eb 62.24%,
+    rgba(255, 255, 255, 0.9) 91.46%
+  );
+}
+.landing_page-container .tab-info .inner-layout {
+  padding-top: 140px;
+  padding-bottom: 150px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.landing_page-container .tab-info .inner-layout .main {
+  font-family: "Clash Display", Arial, Helvetica, "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #170123;
+  width: 70%;
+}
+.landing_page-container .tab-info .inner-layout .tab-section {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .controllers {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .controllers .controller {
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  color: #999999;
+  cursor: pointer;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .controllers .active-controller {
+  color: #170123;
+  border-left: 4px solid #170123;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .information {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 50px 0px;
+  text-align: left;
+  background: #ffffff;
+  box-shadow: 6px 6px 30px 4px rgba(230, 225, 234, 0.25);
+  border-radius: 16px;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .information .info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .information .info-details .text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #170123;
+}
+.landing_page-container .tab-info .inner-layout .tab-section .information .info-details .graphic {
+  width: 348px;
+  height: 348px;
+}
+.landing_page-container
+  .tab-info
+  .inner-layout
+  .tab-section
+  .information
+  .info-details
+  .graphic
+  img {
+  width: 100%;
+}
+.landing_page-container .call-to-action {
+  margin-top: 80px;
+  margin-bottom: -40px;
+}
+.landing_page-container .call-to-action .inner-layout .box {
+  text-align: left;
+  position: relative;
+  background: linear-gradient(89.92deg, #60088c 0.07%, #a11e90 92.22%);
+  border-radius: 20px;
+  display: flex;
+  padding: 80px;
+}
+.landing_page-container .call-to-action .inner-layout .box .info {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 40px;
+}
+.landing_page-container .call-to-action .inner-layout .box .info .main {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  color: #ffffff;
+}
+.landing_page-container .call-to-action .inner-layout .box .design {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.landing_page-container .call-to-action .inner-layout .box .design img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 995px) {
+  .landing_page-container .banner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: unset;
+    width: 100%;
+    min-height: unset;
+  }
+  .landing_page-container .banner .banner-text {
+    margin: 150px 30px 0px 40px;
+  }
+  .landing_page-container .banner .banner-text .main {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .landing_page-container .banner .banner-text .sub {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .landing_page-container .banner .banner-image {
+    margin: 70px 40px 100px 0px;
+  }
+  .landing_page-container .banner .banner-image .lady-image {
+    margin-top: 200px;
+    width: 100%;
+  }
+  .landing_page-container .banner .banner-image .payment-image {
+    bottom: 100px;
+    right: 200px;
+    width: 60%;
+  }
+  .landing_page-container .key-features {
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .landing_page-container .key-features .inner-layout {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 50px;
+  }
+  .landing_page-container .key-features .inner-layout .main {
+    font-size: 45px;
+    line-height: unset;
+    width: 100%;
+  }
+  .landing_page-container .key-features .inner-layout .features-list {
+    display: flex;
+    gap: 30px;
+  }
+  .landing_page-container .tab-info .inner-layout {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 60px;
+  }
+  .landing_page-container .tab-info .inner-layout .main {
+    font-size: 45px;
+    line-height: unset;
+    width: 100%;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section {
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .controllers {
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .controllers .controller {
+    font-size: 19px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .controllers .active-controller {
+    border-left: 3px solid #170123;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .information {
+    padding: 50px 40px 0;
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .information .info-details {
+    gap: 30px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .information .info-details .text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .information .info-details .graphic {
+    width: 100%;
+    height: auto;
+  }
+  .landing_page-container
+    .tab-info
+    .inner-layout
+    .tab-section
+    .information
+    .info-details
+    .graphic
+    img {
+    width: 100%;
+  }
+  .landing_page-container .call-to-action {
+    margin-top: 60px;
+    margin-bottom: -60px;
+  }
+  .landing_page-container .call-to-action .inner-layout .box {
+    padding: 30px 50px;
+  }
+  .landing_page-container .call-to-action .inner-layout .box .info {
+    width: 50%;
+    gap: 30px;
+  }
+  .landing_page-container .call-to-action .inner-layout .box .info .main {
+    font-size: 30px;
+    line-height: unset;
+    color: #ffffff;
+  }
+  .landing_page-container .call-to-action .inner-layout .box .design {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing_page-container .banner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .landing_page-container .banner .banner-text {
+    order: 2;
+    margin: 50px 20px 0px;
+  }
+  .landing_page-container .banner .banner-text .main {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .landing_page-container .banner .banner-text .sub {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .landing_page-container .banner .banner-image {
+    order: 1;
+    margin: 150px 20px 0px;
+  }
+  .landing_page-container .banner .banner-image .lady-image {
+    margin-top: 0px;
+    width: 80%;
+  }
+  .landing_page-container .banner .banner-image .payment-image {
+    bottom: 0;
+    right: 0px;
+    width: unset;
+    width: 50%;
+  }
+  .landing_page-container .key-features {
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .landing_page-container .key-features .inner-layout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 50px;
+  }
+  .landing_page-container .key-features .inner-layout .main {
+    font-size: 26px;
+    line-height: unset;
+    width: 100%;
+  }
+  .landing_page-container .key-features .inner-layout .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 20px;
+  }
+  .landing_page-container .tab-info .inner-layout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 50px;
+  }
+  .landing_page-container .tab-info .inner-layout .main {
+    font-size: 26px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section {
+    grid-template-columns: 1fr;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .controllers {
+    margin-top: 0px;
+    gap: 20px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .controllers .controller {
+    font-size: 18px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .controllers .active-controller {
+    border-left: 4px solid #170123;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .information {
+    padding: 30px 30px;
+  }
+  .landing_page-container .tab-info .inner-layout .tab-section .information .info-details .text {
+    font-size: 16px;
+  }
+  .landing_page-container .call-to-action {
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
+  .landing_page-container .call-to-action .inner-layout .box {
+    padding: 30px 20px;
+  }
+  .landing_page-container .call-to-action .inner-layout .box .info {
+    width: 100%;
+    gap: 30px;
+  }
+  .landing_page-container .call-to-action .inner-layout .box .info .main {
+    font-size: 25px;
+    line-height: unset;
+    z-index: 2;
+  }
+  .landing_page-container .call-to-action .inner-layout .box .design {
+    width: 40%;
+    z-index: 1;
+    opacity: 80%;
+  }
+}

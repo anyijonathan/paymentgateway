@@ -1,0 +1,18 @@
+.generic-banner {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fbf6fe;
+  background-image: url("../../assets/images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style-type: circle;
+}
+
+li {
+  margin-left: 10px;
+}
