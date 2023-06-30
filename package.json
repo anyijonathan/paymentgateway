@@ -37,17 +37,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
-  "extends": [
-    "react-hooks",
-  ],
-  "plugins": [
-    "react-hooks"
-  ],
-
   "browserslist": {
     "production": [
       ">0.2%",
@@ -65,12 +56,21 @@
     "postcss": "^8.4.16",
     "prettier": "2.8.1",
     "tailwindcss": "^3.1.8",
-    "react-scripts": "^5.0.1",
-    "@svgr/webpack": "^7.0.0"
+    "react-scripts": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-hooks"
+    ],
+    "plugins": [
+      "react-hooks"
+    ]
   },
   "overrides": {
     "react-scripts": {
-      "@svgr/webpack": "^7.0.0"     
-      }   
+      "plugins": [
+        "@svgr/webpack"
+      ]
     }
+  }
 }
