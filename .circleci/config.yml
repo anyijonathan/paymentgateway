@@ -18,13 +18,12 @@ jobs:
             - ~/.npm
             - ~/.cache
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: CI=false npm run build
       - run:
-          name: Check build directory
-          command: ls build/
+          name: Create build directory
+          command: mkdir build
+      - run: CI=false npm run build
       - store_artifacts:
           path: build/
-          destination: build
 
   deploy:
     docker:
