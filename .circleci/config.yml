@@ -18,7 +18,7 @@ jobs:
             - ~/.npm
             - ~/.cache
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: npm run build
+      - run: CI=false npm run build
       - run: |
           sudo pip install awscli
           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
