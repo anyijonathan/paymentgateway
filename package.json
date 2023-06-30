@@ -41,6 +41,13 @@
     "eject": "react-scripts eject"
   },
 
+  "extends": [
+    "react-hooks",
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+
   "browserslist": {
     "production": [
       ">0.2%",
