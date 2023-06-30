@@ -1,1 +1,27 @@
-
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: npm run build
+      - run: |
+          sudo pip install awscli
+          aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+          aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+          aws configure set default.region us-east-1
+          aws configure set default.output json
+          aws s3 cp build/ s3://agencybankingbuild/ --recursive
