@@ -66,6 +66,9 @@
       "react-hooks"
     ]
   },
+  "eslintConfig": {
+  "extends": "react-app"
+}
   "overrides": {
     "react-scripts": {
       "plugins": [
