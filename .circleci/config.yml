@@ -20,10 +20,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: Create build directory
-          command: mkdir build
+          command: mkdir -p build
       - run: CI=false npm run build
       - store_artifacts:
-          path: build/
+          path: ~/repo/build
+          destination: build
 
   deploy:
     docker:
@@ -32,12 +33,16 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
       - run: pip install awscli --user
       - run: aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
       - run: aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
       - run: aws configure set default.region us-east-1
       - run: aws configure set default.output json
-      - run: aws s3 cp ~/repo/build/ s3://agencybankingbuild/ --recursive
+      - run: aws s3 cp $CIRCLE_ARTIFACTS/build/ s3://agencybankingbuild/ --recursive
 
 workflows:
   version: 2
